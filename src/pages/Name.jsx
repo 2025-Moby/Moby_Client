@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import logo from '../assets/logo.svg';
+import { useNavigate } from 'react-router-dom';
 
 
 const MAIN_COLOR = '#ffcc00'; 
@@ -146,13 +147,18 @@ const Name = () => {
     const handleChange = (e) => {
         setName(e.target.value);
     };
+    const navigate = useNavigate();
 
     const handleNext = () => {
         if (name.trim()) {
             alert(`입력된 이름: ${name.trim()}`);
+            navigate('/choice'); 
         } else {
             alert('이름을 입력해주세요.');
         }
+    };
+    const handleBefore =() => {
+        navigate("/"); 
     };
 
     const isButtonEnabled = name.trim().length > 0;
@@ -162,7 +168,7 @@ const Name = () => {
             {/* iOS 상태 표시줄 (데모용) */}
 
             <Header>
-                <BackArrow>←</BackArrow>
+                <BackArrow onClick={handleBefore}>←</BackArrow>
                 <LogoImage src={logo} alt="Moby 로고" />
             </Header>
             

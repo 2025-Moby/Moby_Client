@@ -171,7 +171,6 @@ const CodePage = () => {
             alert('참여 코드를 입력해주세요.');
         }
     };
-
     const isButtonEnabled = code.trim().length > 0;
 
     return (

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import styled, { css } from 'styled-components';
 import logo from '../assets/logo.svg';
+import { useNavigate } from 'react-router-dom';
 
 
 // ----------------------------------------------------
@@ -169,6 +170,7 @@ const AgePage = () => {
         month: 'MM',
         day: 'DD'
     });
+    const navigate = useNavigate();
 
     const monthRef = useRef(null);
     const dayRef = useRef(null);
@@ -191,10 +193,12 @@ const AgePage = () => {
         const { year, month, day } = date;
         if (year.length === 4 && month.length === 2 && day.length === 2) {
             alert(`입력된 생년월일: ${year}년 ${month}월 ${day}일`);
+            navigate('/name'); 
         } else {
             alert('생년월일을 올바르게 입력해주세요.');
         }
     };
+    
 
     const isButtonEnabled = date.year.length === 4 && date.month.length === 2 && date.day.length === 2;
 
@@ -203,7 +207,6 @@ const AgePage = () => {
             {/* iOS 상태 표시줄 (데모용) */}
 
             <Header>
-                <BackArrow>←</BackArrow>
                 <LogoImage src={logo} alt="Moby 로고" />
             </Header>
             
