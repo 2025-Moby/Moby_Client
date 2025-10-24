@@ -1,23 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import styled from 'styled-components';
-import LoginPage from '../src/pages/LoginPage';
-import AgePage from './pages/AgePage';
-import Name from './pages/Name';
-import CodePage from './pages/CodePage';
-
-
-const App = () => {
-  return (
-    <AppContainer>  
-      {/* <LoginPage /> */}
-      {/* <AgePage /> */}
-      {/* <Name   /> */}
-      <CodePage />
-    </AppContainer>
-
-
-=======
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import LoginPage from './pages/LoginPage';
@@ -40,7 +21,6 @@ const App = () => {
         <Route path="/question" element={<QuestionPage />} />
       </Routes>
     </BrowserRouter>
->>>>>>> 8273153b9e9b84902f7650df7885da4967d82557
   );
 };
 
