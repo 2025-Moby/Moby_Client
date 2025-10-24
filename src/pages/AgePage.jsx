@@ -12,9 +12,9 @@ const MAIN_COLOR = '#ffcc00'; // Moby 로고 및 버튼 색상
 const BACKGROUND_COLOR = '#ffffff'; // 이미지에 맞게 흰색 배경으로 변경
 
 const AgeContainer = styled.div`
-    width: 100%;
-    max-width: 390px;
-    height: 100vh;
+   width: 100%;
+  max-width: 390px;
+  height: 100vh;
   max-height: 844px;
   background-color: #ffffff;
   position: relative;
@@ -125,11 +125,12 @@ const DateInput = styled.input`
 `;
 
 const NextButton = styled.button`
-    width: 90%;
+     width: 100%;
+    height: 56px;
     margin: 0 auto 20px;
     margin-bottom:74px;
     padding: 15px 0;
-    background-color: ${MAIN_COLOR};
+    background-color: #FFDE7D;
     color: #fff;
     border: none;
     border-radius: 12px;
