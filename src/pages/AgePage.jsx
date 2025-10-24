@@ -126,8 +126,8 @@ const DateInput = styled.input`
 `;
 
 const NextButton = styled.button`
-     width: 100%;
-    height: 56px;
+    width: 361px;
+    height: 44px;
     margin: 0 auto 20px;
     margin-bottom:74px;
     padding: 15px 0;
@@ -138,7 +138,7 @@ const NextButton = styled.button`
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    transition: opacity 0.2s;n
+    transition: opacity 0.2s;
 
     &:disabled {
         /* 이미지처럼 활성화 색상을 유지하되, 불투명도를 낮춥니다. */
@@ -192,10 +192,7 @@ const AgePage = () => {
     const handleNext = () => {
         const { year, month, day } = date;
         if (year.length === 4 && month.length === 2 && day.length === 2) {
-            alert(`입력된 생년월일: ${year}년 ${month}월 ${day}일`);
             navigate('/name'); 
-        } else {
-            alert('생년월일을 올바르게 입력해주세요.');
         }
     };
     

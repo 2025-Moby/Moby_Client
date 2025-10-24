@@ -101,8 +101,8 @@ const NameInput = styled.input`
 `;
 
 const NextButton = styled.button`
-    width: 100%;
-    height: 56px;
+    width: 361px;
+    height: 44px;
     margin: 0 auto 20px;
     margin-bottom:74px;
     padding: 15px 0;
@@ -151,10 +151,7 @@ const Name = () => {
 
     const handleNext = () => {
         if (name.trim()) {
-            alert(`입력된 이름: ${name.trim()}`);
             navigate('/choice'); 
-        } else {
-            alert('이름을 입력해주세요.');
         }
     };
     const handleBefore =() => {
