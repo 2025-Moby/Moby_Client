@@ -137,7 +137,7 @@ const NextButton = styled.button`
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s;n
 
     &:disabled {
         /* 이미지처럼 활성화 색상을 유지하되, 불투명도를 낮춥니다. */

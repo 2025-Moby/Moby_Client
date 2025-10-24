@@ -2,12 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import LoginPage from '../src/pages/LoginPage';
 import AgePage from './pages/AgePage';
+import Name from './pages/Name';
+import CodePage from './pages/CodePage';
+
 
 const App = () => {
   return (
-    <AppContainer>
+    <AppContainer>  
       {/* <LoginPage /> */}
-      <AgePage />
+      {/* <AgePage /> */}
+      {/* <Name   /> */}
+      <CodePage />
     </AppContainer>
 
 
